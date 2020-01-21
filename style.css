@@ -143,7 +143,7 @@ header>.banner-text>a {
     height: 60px;
 }
 
-#sevice svg {
+#sevices .icon-color{
     fill: white;
 }
 
@@ -161,3 +161,4 @@ header>.banner-text>a {
     line-height: 1.75;
     margin-bottom: 10px;
 }
+
