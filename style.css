@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     z-index: 10;
+    box-sizing: border-box;
 }
 
 body {
@@ -35,7 +36,7 @@ a {
 }
 
 .button:hover{
-    opacity: 0.8;
+    opacity: 0.7;
 }
 
 .title-special{
@@ -144,27 +145,33 @@ header>.banner-text>.banner-title {
 
 #sevices>.content>.row {
     display: flex;
-    height: 267px;
+    align-content: center;
+    justify-content: center;
+    margin-right: -15px;
+    margin-left: -15px;
 }
 
 #sevices>.content>.row>div {
     padding: 0 15px;
+    width: 30%;
 } 
 
 #sevices .icon-content {
-    width: 48px;
-    margin: 16px auto;
-    padding: 24px;
-    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+#sevices .icon-content>.icon-background {
+    display : inline-block;
     background-color: #fed136;
+    border-radius: 100%;
+    padding: 24px;   
 }
 
 #sevices .icon {
     width: 48px;
     height: 48px;
-}
-
-#sevices .icon-color{
     fill: white;
 }
 
@@ -185,17 +192,15 @@ header>.banner-text>.banner-title {
     margin-bottom: 10px;
 }
 
-/* protfolio */
 #protfolio {
     padding: 150px 0;
     background-color: #f7f7f7;
-    box-sizing: border-box;
 }
 
 #protfolio .content {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center
+    justify-content: center;
 }
 
 #protfolio>.content>.card {
@@ -203,6 +208,54 @@ header>.banner-text>.banner-title {
     box-shadow: 0 2px 44px 0 rgba(0,0,0,0.14);
     border-radius: 6px;
     width: 30%;
+    height: auto;
+    overflow: hidden;
+}
+
+#protfolio>.content>.card>.protfolio-link {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
+
+#protfolio>.content>.card>.protfolio-link>.protfolio-hover {
+    background: rgba(254, 209, 54, .8);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all ease .5s;
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#protfolio>.content>.card>.protfolio-link>.protfolio-hover>.hover-icon-background {
+    display: inline-block;
+    background-color: #fed136;
+    padding: 16px;
+    border-radius: 100%;
+    opacity: 0.8;
+}
+
+#protfolio>.content>.card>.protfolio-link>.protfolio-hover svg {
+    fill: white;
+    height: 48px;
+    width: 48px;    
+}
+
+#protfolio>.content>.card>.protfolio-link>.protfolio-hover:hover {
+    opacity: 1;
+}
+
+#protfolio>.content>.card img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
 }
 
 #protfolio .protfolio-text{
@@ -226,12 +279,6 @@ header>.banner-text>.banner-title {
     line-height: 1.75;
 }
 
-#protfolio img {
-    width: 100%;
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
-}
-
 #about {
     padding: 120px 0;
 }
@@ -239,7 +286,6 @@ header>.banner-text>.banner-title {
 #about>.content {
     display: flex;
     flex-direction: column;
-    box-sizing: border-box;
     position: relative;
     align-items: center;
 }
@@ -249,7 +295,7 @@ header>.banner-text>.banner-title {
     width: 3px;
     background-color: #f1f1f1;
     position: absolute;
-    top: 30px;
+    top: 100px;
     bottom: 0;   
 }
 
@@ -322,7 +368,6 @@ header>.banner-text>.banner-title {
 #team>.content {
     display: flex;
     justify-content: center;
-    box-sizing: border-box;
 }
 
 #team>.content>.person {
@@ -370,6 +415,10 @@ header>.banner-text>.banner-title {
     border-radius: 100%;
     margin-left: 8px;
     margin-right: 8px;
+}
+
+#team>.content .social-buttons> a:hover {
+    background-color: #fed136;
 }
 
 #team svg {
@@ -440,7 +489,7 @@ section#contact ::-webkit-input-placeholder {
 
 #contact .content-input>.textarea-message textarea {
     padding: 20px;
-    height: 194px;
+    height: 237px;
     margin-bottom: 25px;
     border-radius: 4px;
     background-color: #fff;
@@ -510,9 +559,12 @@ footer>.content .social-buttons> a {
     margin-right: 8px;
 }
 
+footer>.content .social-buttons> a:hover {
+    background-color: #fed136;
+}
+
 footer svg {
     fill: white !important;
     height: 20px !important;
     width: auto !important;
 }
-
