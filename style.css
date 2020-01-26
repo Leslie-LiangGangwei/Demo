@@ -192,18 +192,18 @@ header>.banner-text>.banner-title {
     margin-bottom: 10px;
 }
 
-#protfolio {
+#portfolio {
     padding: 150px 0;
     background-color: #f7f7f7;
 }
 
-#protfolio .content {
+#portfolio .content {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-#protfolio>.content>.card {
+#portfolio>.content>.card {
     margin: 0 15px 30px 15px;
     box-shadow: 0 2px 44px 0 rgba(0,0,0,0.14);
     border-radius: 6px;
@@ -212,13 +212,13 @@ header>.banner-text>.banner-title {
     overflow: hidden;
 }
 
-#protfolio>.content>.card>.protfolio-link {
+#portfolio>.content>.card>.portfolio-link {
     display: block;
     margin: 0 auto;
     position: relative;
 }
 
-#protfolio>.content>.card>.protfolio-link>.protfolio-hover {
+#portfolio>.content>.card>.portfolio-link>.portfolio-hover {
     background: rgba(254, 209, 54, .8);
     position: absolute;
     width: 100%;
@@ -232,7 +232,7 @@ header>.banner-text>.banner-title {
     align-items: center;
 }
 
-#protfolio>.content>.card>.protfolio-link>.protfolio-hover>.hover-icon-background {
+#portfolio>.content>.card>.portfolio-link>.portfolio-hover>.hover-icon-background {
     display: inline-block;
     background-color: #fed136;
     padding: 16px;
@@ -240,17 +240,17 @@ header>.banner-text>.banner-title {
     opacity: 0.8;
 }
 
-#protfolio>.content>.card>.protfolio-link>.protfolio-hover svg {
+#portfolio>.content>.card>.portfolio-link>.portfolio-hover svg {
     fill: white;
     height: 48px;
     width: 48px;    
 }
 
-#protfolio>.content>.card>.protfolio-link>.protfolio-hover:hover {
+#portfolio>.content>.card>.portfolio-link>.portfolio-hover:hover {
     opacity: 1;
 }
 
-#protfolio>.content>.card img {
+#portfolio>.content>.card img {
     display: block;
     max-width: 100%;
     height: auto;
@@ -258,11 +258,11 @@ header>.banner-text>.banner-title {
     border-top-right-radius: 6px;
 }
 
-#protfolio .protfolio-text{
+#portfolio .portfolio-text{
     padding: 16px;
 }
 
-#protfolio>.content>.card h4{
+#portfolio>.content>.card h4{
     text-align: center;
     font-weight: 700;
     font-size: 18px;
@@ -270,7 +270,7 @@ header>.banner-text>.banner-title {
     color: inherit;
 }
 
-#protfolio>.content>.card p{
+#portfolio>.content>.card p{
     text-align: center;
     font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-style: italic;
@@ -307,13 +307,13 @@ header>.banner-text>.banner-title {
 }
 
 #about>.content>.timeline .left {
-    width: 30%;
-    padding: 0 40px;
+    width: 40%;
+    padding: 0 50px;
 }
 
 #about>.content>.timeline .right {
-    width: 30%;
-    padding: 0 40px;   
+    width: 40%;
+    padding: 0 50px;   
 }
 
 #about>.content .left h4 {
@@ -341,18 +341,19 @@ header>.banner-text>.banner-title {
 }
 
 #about>.content .about-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 120px;
     height: 120px;
     background-color: #fed136;
     color: #fff;
     border-radius: 100%;
     border: 7px solid #f1f1f1;
-    text-align: center; 
 }
 
 #about .image h4 {
     font-size: 18px;
-    margin-top: 20px;
     line-height: 26px;
 }
 
