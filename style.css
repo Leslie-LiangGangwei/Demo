@@ -157,18 +157,16 @@ nav-mobile {
     padding: 15px ;
 }
 
-nav-mobile>.nav-mobile-backgroung {
+nav-mobile>.nav-mobile-background {
     border-radius: 4px;
     background-color:  #fed136;
 }
 
-nav-mobile>.nav-mobile-backgroung svg {
+nav-mobile>.nav-mobile-background svg {
     fill: white;
-    width:24px;
-    
+    width: 20px; 
+    height: 20px; 
 }
-
-
 
 header>.banner-text {
     text-align: center;
