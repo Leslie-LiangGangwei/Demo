@@ -70,6 +70,48 @@ h3 {
     font-weight: 400;
 }
 
+@media (max-width:768px){
+    header {
+        height: 389px !important ;
+    }
+    tabbar {
+        display: none;
+    }
+    nav>.logo {
+        padding: 15px !important ;
+    }
+    nav>.logo>a {
+    line-height: 20px;
+    color: #fed136;
+    font-size: 18px !important ;
+    white-space: nowrap;
+    }
+    nav-mobile {
+        display: block !important ;
+    }
+    header>.banner-text {
+        text-align: center;
+        padding-top: 50px!important ;
+        padding-bottom: 50px !important ;
+    }
+    header>.banner-text>.banner-lead {
+        font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        color: white;
+        font-size: 22px !important ;
+        line-height: 22px !important ;
+        font-style: italic;
+        margin-bottom: 25px !important ;
+    }
+    header>.banner-text>.banner-title { 
+        color: white;
+        text-transform: uppercase;
+        font-size:50px !important ;
+        font-weight: 700;
+        line-height: 50px !important ;
+        margin-bottom: 25px !important ;
+    }  
+}
+
 header {
     height: 757px;
     background-position: center center;
@@ -91,8 +133,8 @@ nav>.logo {
 nav>.logo>a {
     line-height: 20px;
     color: #fed136;
-    height: 50px;
     font-size: 28px;
+    white-space: nowrap;
 }
 
 nav>tabbar {
@@ -109,6 +151,24 @@ nav>tabbar>a {
 nav>tabbar>a:hover {
     color: #fed136;
 }
+
+nav-mobile {
+    display: none;
+    padding: 15px ;
+}
+
+nav-mobile>.nav-mobile-backgroung {
+    border-radius: 4px;
+    background-color:  #fed136;
+}
+
+nav-mobile>.nav-mobile-backgroung svg {
+    fill: white;
+    width:24px;
+    
+}
+
+
 
 header>.banner-text {
     text-align: center;
@@ -132,6 +192,21 @@ header>.banner-text>.banner-title {
     font-weight: 700;
     line-height: 75px;
     margin-bottom: 50px;
+}
+
+@media (max-width:768px)  {
+    #sevices>.content>.row {
+        flex-direction: column;
+    }
+    #sevices>.content>.row>div {
+
+        padding: 15px 15px !important ;
+        width: 100% !important ;
+    }
+    #sevices>.content {    
+        padding-top: 100px !important ;
+        padding-bottom: 100px !important ;
+    }
 }
 
 #sevices>.content {    
@@ -184,6 +259,18 @@ header>.banner-text>.banner-title {
     font-size: 14px;
     line-height: 1.75;
     margin-bottom: 10px;
+}
+
+@media (max-width:768px) {
+    #portfolio {    
+        padding: 100px 0 !important ;
+    }
+    #portfolio>.content>.card {
+        margin: 0 15px 30px 15px;
+        box-shadow: 0 2px 44px 0 rgba(0,0,0,0.14);
+        border-radius: 6px;
+        width: auto !important;
+    }
 }
 
 #portfolio {
@@ -271,6 +358,53 @@ header>.banner-text>.banner-title {
     line-height: 1.75;
 }
 
+@media (max-width:768px){
+    #about {
+        padding-top: 100px !important ;
+        margin-bottom: -200px !important;
+    }
+    #about>.content>.timeline {
+        padding-bottom: 50px !important ;
+    }
+    #about>.content>.timeline>.image  {
+        padding: 0 15px;
+    }
+    #about>.content .about-img {
+        width: 80px !important ;
+        height: 80px !important ;
+    }
+    #about>.content>.timeline .left {
+        display: none !important ;
+    }
+    #about>.content>.timeline .right {
+        opacity: 1 !important ;
+        padding: 0 15px 0 15px !important ;
+        width: auto !important ;
+    }
+    #about>.content::before{
+        content: "";
+        width: 3px;
+        background-color: #f1f1f1;
+        position: absolute;
+        top: 0;
+        bottom: 250px !important ;   
+        left: 55px;
+    }
+    #about .mobile {
+        opacity: 0 !important ;
+        padding: 0 15px 0 15px !important ;
+        width: auto !important ;
+    }
+    #about .about-img h4 {
+        width: 80px !important ;
+        height: 80px !important ;
+        font-size:  10px !important ;
+        line-height: 14px !important;
+        white-space: nowrap;
+        padding: 16px 0;
+    }   
+}
+
 #about {
     padding: 120px 0;
 }
@@ -287,20 +421,26 @@ header>.banner-text>.banner-title {
     width: 3px;
     background-color: #f1f1f1;
     position: absolute;
-    top: 100px;
-    bottom: 0;   
+    top: 0;
+    bottom: 100px;   
 }
 
 #about>.content>.timeline {
     display: flex;
     justify-content: center;
     padding-bottom: 100px;
-    align-content: center;
+    align-items: flex-start;
 }
 
 #about>.content>.timeline .left {
     width: 40%;
     padding: 0 50px;
+}
+
+#about>.content>.timeline .mobile {
+    width: 40%;
+    padding: 0 50px;
+    opacity: 0;
 }
 
 #about>.content>.timeline .right {
@@ -329,13 +469,14 @@ header>.banner-text>.banner-title {
 #about>.content>.timeline>.image  {
     display: flex;
     justify-content: center;
-    align-items: center;    
+    align-items: flex-start;    
 }
 
 #about>.content .about-img {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
     width: 120px;
     height: 120px;
     background-color: #fed136;
@@ -347,10 +488,20 @@ header>.banner-text>.banner-title {
 #about .image h4 {
     font-size: 18px;
     line-height: 26px;
+    white-space: nowrap;
 }
 
 #about .timeline-special{
     padding: 0 !important;
+}
+
+@media (max-width:768px){
+    #team {
+        padding: 100px 0 !important;
+    }
+    #team>.content {
+        flex-direction: column;
+    }
 }
 
 #team {
@@ -360,6 +511,7 @@ header>.banner-text>.banner-title {
 
 #team>.content {
     display: flex;
+    align-items: center;
     justify-content: center;
 }
 
@@ -420,10 +572,17 @@ header>.banner-text>.banner-title {
     width: auto;
 }
 
+@media (max-width:768px){
+    #clients {
+        flex-direction: column;   
+    }
+    #clients .ad {
+        margin: 35px auto !important ;
+}
+
 #clients {
     display: flex;
     flex-grow: 4; 
-    display: flex;
 }
 
 #clients .ad {
@@ -432,6 +591,23 @@ header>.banner-text>.banner-title {
     margin: 50px auto;
     justify-content: center;
 } 
+
+@media (max-width:768px){
+    #contact>.content {
+    padding: 100px 0 !important ;
+    }
+    #contact .content-input{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #contact .content-input>.input-default {
+        width: 100% !important;
+    }
+    #contact .content-input>.textarea-message {
+        width: 100% !important;
+    }
+}
 
 #contact {
     box-sizing: border-box;
@@ -497,6 +673,15 @@ section#contact ::-webkit-input-placeholder {
 #contact .content>.input-botton{
     display: flex;
     justify-content: center;
+}
+
+@media (max-width:768px) {
+    footer .content {
+        display: flex;
+        flex-direction: column !important ;
+        align-content: center;
+        justify-content: center;
+    }
 }
 
 footer .content {
