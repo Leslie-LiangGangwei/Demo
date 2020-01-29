@@ -158,14 +158,17 @@ nav-mobile {
 }
 
 nav-mobile>.nav-mobile-background {
+    display: flex;
+    justify-content: center;
     border-radius: 4px;
     background-color:  #fed136;
+    width: 32px;
 }
 
 nav-mobile>.nav-mobile-background svg {
     fill: white;
-    width: 22px; 
-    height: 22px; 
+    width: 20px; 
+    height: 20px; 
 }
 
 header>.banner-text {
