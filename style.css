@@ -503,6 +503,10 @@ header>.banner-text>.banner-title {
     #team>.content {
         flex-direction: column;
     }
+    #team p {
+        padding: 0 15px;
+        margin: 0 !important ;
+    }
 }
 
 #team {
